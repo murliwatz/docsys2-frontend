@@ -1,24 +1,82 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background-color: #800;
+  width: 100%;
+  color: #ddd;
+  float: left;
+  box-sizing:border-box;
 }
 
-.App-intro {
-  font-size: large;
+.App-header h1 {
+    letter-spacing: 0.2em;
+    padding: 0.2em;
+    display: inline-block;
+    padding-left: 0.7em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-header .headerMenu {
+  list-style: none;
+  float:right;
+}
+
+.App-header .headerMenu li {
+  display: inline-block;
+}
+
+.App-header .headerMenu li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+.App-header .headerMenu li a:hover {
+  background-color: #900;
+}
+
+.mainMenu {
+  float: left;
+  width: 250px;
+  background-color: #800;
+  list-style: none;
+  height: 100%;
+}
+
+.mainMenu ul li a {
+  padding:0.5em;
+  display: block;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.mainMenu li a:hover {
+  background-color: #900;
+}
+
+.mainMenu li ul {
+  display: none;
+  background-color: #700;
+}
+
+.mainMenu li ul li a {
+  padding-left: 1em;
+  font-size: 1em;
+}
+
+.ViewHeader {
+  width: 100%;
+  padding: 0.5em;
+  box-sizing:border-box;
+  color:#333;
+  border-bottom: 1px solid black;
+  background-color: #eee;
+}
+
+select {
+  background: #fff;
+   padding: 0.5em;
+   line-height: 1;
+   border: 1px solid #ccc;
+   border-radius: 12px;
+   color: #333;
+   -webkit-appearance: none;
 }

@@ -1,18 +1,38 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MainMenu from './MainMenu.js';
+import HeaderMenu from './HeaderMenu.js';
+import $ from 'jquery'
 
 class App extends Component {
+
+  constructor(props) {
+    super();
+  }
+
+  componentDidMount() {
+    $(".Viewer").css({
+      "position" : "absolute",
+      "left" : $(".mainMenu").width(),
+      "top" : $(".App-header").height(),
+      "width" : $(window).width() - $(".mainMenu").width(),
+      "height" : $(window).height() - $(".App-header").height()
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h1>docsys</h1>
+          <HeaderMenu />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <MainMenu />
+        <div className="Viewer">
+          <div className="ViewHeader">
+            Jahr: <select><option>2016 / 2017</option></select>
+          </div>
+        </div>
       </div>
     );
   }
