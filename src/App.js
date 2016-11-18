@@ -2,22 +2,22 @@ import React, { Component } from 'react';
 import './App.css';
 import MainMenu from './MainMenu.js';
 import HeaderMenu from './HeaderMenu.js';
+import Viewer from './Viewer.js';
 import $ from 'jquery'
 
 class App extends Component {
 
   constructor(props) {
     super();
+    this._handleMainMenuItemClicked = this._handleMainMenuItemClicked.bind(this);
   }
 
   componentDidMount() {
-    $(".Viewer").css({
-      "position" : "absolute",
-      "left" : $(".mainMenu").width(),
-      "top" : $(".App-header").height(),
-      "width" : $(window).width() - $(".mainMenu").width(),
-      "height" : $(window).height() - $(".App-header").height()
-    })
+    
+  }
+
+  _handleMainMenuItemClicked(item) {
+    this.refs.viewer.setState(item);
   }
 
   render() {
@@ -27,12 +27,8 @@ class App extends Component {
           <h1>docsys</h1>
           <HeaderMenu />
         </div>
-        <MainMenu />
-        <div className="Viewer">
-          <div className="ViewHeader">
-            Jahr: <select><option>2016 / 2017</option></select>
-          </div>
-        </div>
+        <MainMenu itemClicked={this._handleMainMenuItemClicked} />
+        <Viewer ref="viewer" />
       </div>
     );
   }

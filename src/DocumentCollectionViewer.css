@@ -1,0 +1,52 @@
+.DocumentCollectionViewer .ViewBody {
+  display: table;
+  width: 100%;
+}
+
+.DocumentCollectionViewer .Document {
+  display:table-row;
+}
+
+.DocumentCollectionViewer .DocumentHeader {
+  display:table-row;
+}
+
+.DocumentCollectionViewer .DocumentHeader div {
+  display: table-cell;
+  padding: 0.7em;
+  color: #333 !important;
+  font-weight: bold;
+}
+
+.DocumentCollectionViewer .Document:nth-child(even) {
+  background-color: #eee;
+}
+
+.DocumentCollectionViewer .Document:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.DocumentCollectionViewer .Document div {
+  display: table-cell;
+  padding: 0.7em;
+  color: #333 !important;
+}
+
+.DocumentCollectionViewer .Document div i {
+  color: #333 !important;
+}
+
+.DocumentCollectionViewer .ViewHeader {
+  width: 100%;
+  padding: 0.5em;
+  box-sizing:border-box;
+  color:#333 !important;
+  border-bottom: 1px solid black;
+  background-color: #eee;
+  font-size: 0.8em;
+}
+
+.DocumentCollectionViewer {
+	color: #333;
+}
+
