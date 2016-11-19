@@ -34,6 +34,20 @@ class DocumentCollectionViewer extends Component {
             docs : [
               {id:3, klient: "Haderer Hannes", date: "2016-08-10"},
               {id:4, klient: "Bruckner Michael", date: "2016-08-10"},
+              {id:5, klient: "Haderer Hannes", date: "2016-08-10"},
+              {id:6, klient: "Bruckner Michael", date: "2016-08-10"},
+              {id:7, klient: "Haderer Hannes", date: "2016-08-10"},
+              {id:8, klient: "Bruckner Michael", date: "2016-08-10"},
+              {id:9, klient: "Haderer Hannes", date: "2016-08-10"},
+              {id:10, klient: "Bruckner Michael", date: "2016-08-10"},
+              {id:11, klient: "Haderer Hannes", date: "2016-08-10"},
+              {id:12, klient: "Bruckner Michael", date: "2016-08-10"},
+              {id:13, klient: "Haderer Hannes", date: "2016-08-10"},
+              {id:15, klient: "Bruckner Michael", date: "2016-08-10"},
+              {id:16, klient: "Haderer Hannes", date: "2016-08-10"},
+              {id:17, klient: "Bruckner Michael", date: "2016-08-10"},
+              {id:18, klient: "Haderer Hannes", date: "2016-08-10"},
+              {id:19, klient: "Bruckner Michael", date: "2016-08-10"},
             ]
           })
           break;
@@ -104,9 +118,10 @@ class DocumentCollectionViewer extends Component {
                 <div className="DocumentType">{this.state.desc}</div>
                 <div className="DocumentKlient">{item.klient}</div>
                 <div className="DocumentDate">{(new Date(item.date)).toLocaleDateString()}</div>
-                <div className="DocumentEdit"><i className="fa fa-pencil" aria-hidden="true"></i></div>
-                <div className="DocumentRemove"><i className="fa fa-trash" aria-hidden="true"></i></div>
-                <div className="DocumentInfo"><i className="fa fa-info-circle" aria-hidden="true"></i></div>
+                <div className="DocumentEdit"><a href="#" title="Bearbeiten"><i className="fa fa-pencil" aria-hidden="true"></i></a></div>
+                <div className="DocumentRemove"><a href="#" title="Löschen"><i className="fa fa-trash" aria-hidden="true"></i></a></div>
+                <div className="DocumentRemove"><a href="#" title="Als PDF herunterladen"><i className="fa fa-download" aria-hidden="true"></i></a></div>
+                <div className="DocumentInfo"><a href="#" title="Informationen"><i className="fa fa-info-circle" aria-hidden="true"></i></a></div>
               </div>)
             }
           </div>

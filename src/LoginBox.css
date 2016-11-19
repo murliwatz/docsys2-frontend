@@ -1,0 +1,32 @@
+.LoginBox {
+    margin: 5em auto;
+    width: 400px;
+    text-align: center;
+    background-color: #800;
+    color:#eee;
+    padding: 2em;
+}
+
+.LoginBox h1 {
+	margin-bottom:1em;
+	letter-spacing: 0.2em;
+}
+
+.LoginBox input[type=text],
+.LoginBox input[type=password]  {
+	padding:0.5em;
+	border:2px #999 solid;
+}
+
+.LoginBox input[type=button] {
+	padding:0.5em;
+	border:2px #999 solid;
+	color:#fff;
+	background-color: #333;
+	cursor: pointer;
+}
+
+.LoginBoxForm input {
+    display: block;
+    margin: 1em auto;
+}

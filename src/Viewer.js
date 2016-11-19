@@ -28,7 +28,8 @@ class Viewer extends Component {
       "left" : $(".mainMenu").width(),
       "top" : $(".App-header").height(),
       "width" : $(window).innerWidth() - $(".mainMenu").width(),
-      "height" : $(window).innerHeight() - $(".App-header").height()
+      "height" : $(window).innerHeight() - $(".App-header").height(),
+      "overflow": "auto"
     })
   }
 

@@ -53,14 +53,18 @@ class MainMenu extends Component {
             <li><a href="#"><i className="fa fa-angle-double-right" aria-hidden="true"></i> Dokumente</a>
               <ul>
                 <li><a href="#" data-item="vd" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Verlaufsdokumentationen</a></li>
+                <li><a href="#" data-item="jze" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Jahreszielevaluation</a></li>
                 <li><a href="#" data-item="jzp" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Jahreszielplanungen</a></li>
-                <li><a href="#" data-item="vb" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Verlaufsbericht</a></li>
-                <li><a href="#" data-item="pd" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Physiodokumentation</a></li>
-                <li><a href="#" data-item="bl" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Bedarfsliste</a></li>
+                <li><a href="#" data-item="vb" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Verlaufsberichte</a></li>
+                <li><a href="#" data-item="fvb" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Fallverlaufsbesprechungen</a></li>
+                <li><a href="#" data-item="pd" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Physiodokumentationen</a></li>
+                <li><a href="#" data-item="bl" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Bedarfslisten</a></li>
+                <li><a href="#" data-item="awl" data-view="DocumentCollection" onClick={this._handleMenuItemClick}>Anwesenheitslisten</a></li>
               </ul>
             </li>
             <li><a href="#"><i className="fa fa-angle-double-right" aria-hidden="true"></i> Einstellungen</a>
               <ul>
+              	<li><a href="#" data-item="null" data-view="ChangePassword" onClick={this._handleMenuItemClick}>Passwort ändern</a></li>
                 <li><a href="#" data-item="null" data-view="ManageRights" onClick={this._handleMenuItemClick}>Rechte / Rollen</a></li>
                 <li><a href="#" data-item="null" data-view="ManageUsers" onClick={this._handleMenuItemClick}>Benutzer verwalten</a></li>
                 <li><a href="#" data-item="null" data-view="ManageClients" onClick={this._handleMenuItemClick}>Klienten verwalten</a></li>
